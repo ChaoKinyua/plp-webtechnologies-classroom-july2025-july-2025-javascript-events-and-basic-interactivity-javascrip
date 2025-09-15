@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🏠 Property Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🏠 Welcome to Smart Property Manager</h1>
+    <button id="toggleMode">🌙 Toggle Dark/Light Mode</button>
+  </header>
+
+  <main>
+    <!-- Part 1: Event Handling -->
+    <section>
+      <h2>📊 Property Counter</h2>
+      <p>Track how many properties you’re managing today!</p>
+      <button id="countBtn">+ Add Property</button>
+      <p id="counter">Total Properties: 0</p>
+    </section>
+
+    <!-- Part 2: Interactive Features -->
+    <section>
+      <h2>❓ Frequently Asked Questions</h2>
+      <div class="faq">
+        <h3 class="question">How do I add a new property?</h3>
+        <p class="answer">Click the "Add Property" button and fill in the form with property details.</p>
+      </div>
+      <div class="faq">
+        <h3 class="question">Can I edit tenant information?</h3>
+        <p class="answer">Yes, all tenant details can be updated directly in the tenant management section.</p>
+      </div>
+      <div class="faq">
+        <h3 class="question">Do you support online rent payments?</h3>
+        <p class="answer">Yes! We integrate with payment providers for secure rent collection.</p>
+      </div>
+    </section>
+
+    <!-- Part 3: Form Validation -->
+    <section>
+      <h2>📋 Add a Property</h2>
+      <form id="propertyForm">
+        <label>Property Name:</label>
+        <input type="text" id="propertyName">
+        <span class="error" id="nameError"></span><br>
+
+        <label>Location:</label>
+        <input type="text" id="location">
+        <span class="error" id="locationError"></span><br>
+
+        <label>Rent ($):</label>
+        <input type="number" id="rent">
+        <span class="error" id="rentError"></span><br>
+
+        <button type="submit">Save Property</button>
+        <p id="successMessage"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

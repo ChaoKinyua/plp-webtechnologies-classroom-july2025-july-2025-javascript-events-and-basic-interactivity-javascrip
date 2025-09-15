@@ -1,0 +1,102 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: linear-gradient(135deg, #d4fc79, #96e6a1);
+  color: #222;
+  transition: all 0.5s ease;
+}
+
+header {
+  padding: 20px;
+  background: #2e86de;
+  color: white;
+}
+
+h1, h2 {
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #38ada9;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: #079992;
+}
+
+/* FAQ Section */
+.faq {
+  margin: 15px auto;
+  width: 60%;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.faq:hover {
+  background: #f1f2f6;
+}
+
+.answer {
+  display: none;
+  margin-top: 10px;
+  color: #444;
+}
+
+/* Form */
+form {
+  margin: 20px auto;
+  width: 60%;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  text-align: left;
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+  font-weight: bold;
+}
+
+input {
+  padding: 8px;
+  margin: 5px 0;
+  width: 60%;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-left: 10px;
+}
+
+#successMessage {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Dark Mode */
+.dark {
+  background: linear-gradient(135deg, #1d2b64, #283c86);
+  color: white;
+}
+
+.dark form, .dark .faq {
+  background: #2c2c2c;
+  color: #ddd;
+}
